@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfAppAsync.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppAsync"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Button x:Name="buttonWebAsync" Content="WebAsync" 
+                HorizontalAlignment="Left" Margin="10,10,0,0" 
+                VerticalAlignment="Top" Width="94" Click="buttonWebAsync_Click"
+                />
+        <TextBlock x:Name="textBlockResult" HorizontalAlignment="Left" 
+                   Margin="0,48,0,0" TextWrapping="Wrap" Text="TextBlock" 
+                   VerticalAlignment="Top" 
+                   Height="361" Width="782"
+                   FontSize="14"
+                   FontFamily="Courier New" FontWeight="Bold"
+                  />
+        <Button x:Name="buttonDoOtherThings" Content="DoOtherThings" 
+                HorizontalAlignment="Left" Margin="421,10,0,0" 
+                VerticalAlignment="Top" Width="148"
+                Click="buttonDoOtherThings_Click"/>
+        <Button x:Name="btnEndlessWork" 
+                Content="Doing EndlessWork" 
+                HorizontalAlignment="Left" Margin="630,10,0,0" 
+                VerticalAlignment="Top" Width="139"
+                Click="btnEndlessWork_Click"/>
+        <Button x:Name="buttonMultiAwait"
+                Content="MultipleAwait" 
+                HorizontalAlignment="Left"
+                Margin="162,10,0,0" VerticalAlignment="Top" 
+                Width="142"
+                Click="buttonMultiAwait_Click"/>
+
+    </Grid>
+</Window>
